@@ -1,11 +1,13 @@
-﻿using AEBITRestfulAPI.Services;
+﻿using AEBITRestfulAPI.Filters;
+using AEBITRestfulAPI.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using static AEBITRestfulAPI.Models.AuthModels;
 
 namespace AEBITRestfulAPI.Controllers;
 [ApiController]
 [Route("[controller]")]
-public class AuthController
+public class AuthController : Controller
 {
     private IAuthService _authService;
     
@@ -14,7 +16,7 @@ public class AuthController
         this._authService = authService;
     }
 
-    [HttpPost("registry")]
+    [HttpPost("registry"), AllowAnonymous, HideAuthenticationFilter]
     public async Task<object> RegistryUser(RegistrationRequest request)
     {
         try
@@ -30,7 +32,7 @@ public class AuthController
         }
     }
 
-    [HttpPost("auth")]
+    [HttpPost("auth"), AllowAnonymous, HideAuthenticationFilter]
     public async Task<object> AuthenticationUser(AuthenticationRequest request)
     {
         try
@@ -45,4 +47,9 @@ public class AuthController
         }
     }
 
+    [HttpGet("test/{text}"), Authorize]
+    public async Task<object> test(string text)
+    {
+        return text;
+    }
 }
