@@ -10,6 +10,11 @@ public class WebApiContext : DbContext
     {
         
     }
-    
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.UseSerialColumns();
+    }
     public DbSet<AuthModels.User> User { get; set; }
+    public DbSet<AuthModels.Post> Post { get; set; }
 }

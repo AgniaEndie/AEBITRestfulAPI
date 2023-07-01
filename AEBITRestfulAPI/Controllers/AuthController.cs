@@ -15,7 +15,12 @@ public class AuthController : Controller
     {
         this._authService = authService;
     }
-
+    /// <summary>Registry User</summary>
+    /// <param name="request">Request</param>
+    /// <remarks>
+    ///description
+    ///</remarks>
+    ///<returns>null</returns>
     [HttpPost("registry"), AllowAnonymous, HideAuthenticationFilter]
     public async Task<object> RegistryUser(RegistrationRequest request)
     {
@@ -45,11 +50,5 @@ public class AuthController : Controller
             response.message = ex.Message;
             return response;
         }
-    }
-
-    [HttpGet("test/{text}"), Authorize]
-    public async Task<object> test(string text)
-    {
-        return text;
     }
 }
