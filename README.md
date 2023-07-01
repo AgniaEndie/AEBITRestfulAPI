@@ -14,4 +14,4 @@
 
 <h4 style = "color:#fd7e14">Удачной проверки!</h4>
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://god.postman.co/run-collection/19801253-7f04c4bc-7840-4f4b-9519-1e1c531237ad?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D19801253-7f04c4bc-7840-4f4b-9519-1e1c531237ad%26entityType%3Dcollection%26workspaceId%3D04556f30-08e3-40f1-8339-2f4db94cff34#?env%5BAEB%5D=W3sia2V5IjoiaG9zdCIsInZhbHVlIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6MzI3ODQiLCJlbmFibGVkIjp0cnVlLCJ0eXBlIjoiZGVmYXVsdCJ9XQ==)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/19801253-21264787-3353-445a-81d4-72d892a0bc62?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D19801253-21264787-3353-445a-81d4-72d892a0bc62%26entityType%3Dcollection%26workspaceId%3D04556f30-08e3-40f1-8339-2f4db94cff34#?env%5BAEB%5D=W3sia2V5IjoiaG9zdCIsInZhbHVlIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6MzI3ODQiLCJlbmFibGVkIjp0cnVlLCJ0eXBlIjoiZGVmYXVsdCIsInNlc3Npb25WYWx1ZSI6Imh0dHBzOi8vbG9jYWxob3N0OjMyNzg0Iiwic2Vzc2lvbkluZGV4IjowfV0=)
